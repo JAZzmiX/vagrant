@@ -130,7 +130,7 @@ public function getCacheDir()
         return '/var/log/shop/';
     }
 ```
-* 6.2) Переходим в терминале в проект cd /var/www/shop/    и чистим кэш
+* 6.2) Переходим в терминале, в проект cd /var/www/shop/    и чистим кэш
   `sudo php  bin/console cache:clear`
 
   `sudo php  bin/console cache:clear --env=prod`
