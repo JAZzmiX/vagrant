@@ -132,11 +132,27 @@ public function getCacheDir()
         return '/var/log/shop/';
     }
 ```
-* 6.2) Переходим в терминале, в проект cd /var/www/shop/    и чистим кэш
+* 6.2) Переходим в терминале, в проект `cd /var/www/shop/`    и чистим кэш
   `sudo php  bin/console cache:clear`
 
   `sudo php  bin/console cache:clear --env=prod`
 * 6.3) Запускаем в браузере **192.168.50.7**    - должно работать, у меня работает, на 2-х компах ставил
+
+
+Для установки готового проекта с шаблоном 
+========================
+7) качаем [**Shop**][7]
+
+7.1) Ставим или заменяем свой каталог `/shop/` который лежит в каталоге vagrant `c:/vg/`
+
+7.2) Устанавливаем MySQL `sudo apt-get -f install`
+
+7.3) Идем в терминал и переходим в `cd /var/www/shop/` далее создаем БД `bin/console doctrine:database:create`  //т.к. не указали имя, создаст базу с названием symfony
+
+7.4) Создаем таблицы в базе `bin/console doctrine:schema:create` (на время написание этого текста было всего 2 таблицы: item, category) 
+
+7.5) Теперь проверяем в браузере http://192.168.50.7/  //должно работать.
+
 
 
 
@@ -145,3 +161,4 @@ public function getCacheDir()
 [3]:  https://www.virtualbox.org/wiki/Downloads
 [5]:  https://git-scm.com/downloads
 [6]:  https://goo.gl/FyqFbs
+[7]:  https://github.com/JAZzmiX/shop2
