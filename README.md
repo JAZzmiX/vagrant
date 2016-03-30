@@ -145,9 +145,9 @@ public function getCacheDir()
 
 7.1) Ставим или заменяем свой каталог `/shop/` который лежит в каталоге vagrant `c:/vg/`
 
-7.2) Устанавливаем MySQL `sudo apt-get -f install`
+7.2) Идем в терминал устанавливаем MySQL `sudo apt-get -f install`
 
-7.3) Идем в терминал и переходим в `cd /var/www/shop/` далее создаем БД `bin/console doctrine:database:create`  //т.к. не указали имя, создаст базу с названием symfony
+7.3) Переходим в `cd /var/www/shop/` далее создаем БД `bin/console doctrine:database:create`  //т.к. не указали имя, создаст базу с названием symfony
 
 7.4) Создаем таблицы в базе `bin/console doctrine:schema:create` (на время написание этого текста было всего 2 таблицы: item, category) 
 
