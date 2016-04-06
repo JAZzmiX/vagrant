@@ -32,7 +32,7 @@
 * 3.5) когда зашли на вириальную машину пишем: 
        `sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony`
 
-       `sudo chmod a+x /usr/local/bin/symphony`
+       `sudo chmod a+x /usr/local/bin/symfony`
 * 3.6) переходим в папку куда будет установлен проект: `cd /var/www/`
        в это папке пишем  `sudo symfony new shop`
        (shop –название моего проекта, называйте как хотите)
