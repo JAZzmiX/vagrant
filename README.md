@@ -1,4 +1,4 @@
-Установка Symfony на VagrantUp + nginx  tt
+Установка Symfony на VagrantUp + nginx
 ========================
 
 У кого не получилось поставить и запустить symfony 
